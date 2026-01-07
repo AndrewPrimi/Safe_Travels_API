@@ -1,0 +1,784 @@
+{
+  "metadata": {
+    "source": "US Department of Transportation / OpenStreetMap",
+    "dataset": "Jason's Law Truck Parking Survey + OSM",
+    "website": "https://data.gov/dataset/truck-stop-parking",
+    "last_updated": "2026-01",
+    "total_records": 40,
+    "note": "Sample dataset for MVP. Real data available from BTS Portal."
+  },
+  "truck_stops": [
+    {
+      "id": 1,
+      "name": "Pilot Travel Center #4521",
+      "city": "Joplin",
+      "state": "MO",
+      "county": "Jasper",
+      "highway": "I-44",
+      "milepost": 4,
+      "latitude": 37.0842,
+      "longitude": -94.5133,
+      "parking_spaces": 150,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards"
+      ],
+      "risk_score": 2
+    },
+    {
+      "id": 2,
+      "name": "Love's Travel Stop #521",
+      "city": "Springfield",
+      "state": "IL",
+      "county": "Sangamon",
+      "highway": "I-55",
+      "milepost": 98,
+      "latitude": 39.7817,
+      "longitude": -89.6501,
+      "parking_spaces": 120,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 3
+    },
+    {
+      "id": 3,
+      "name": "TA Travel Center #191",
+      "city": "Oklahoma City",
+      "state": "OK",
+      "county": "Oklahoma",
+      "highway": "I-44",
+      "milepost": 125,
+      "latitude": 35.4676,
+      "longitude": -97.5164,
+      "parking_spaces": 80,
+      "security": "low",
+      "amenities": [
+        "fuel",
+        "restaurant"
+      ],
+      "risk_score": 6
+    },
+    {
+      "id": 4,
+      "name": "Rest Area I-10 Mile 45",
+      "city": "Coachella",
+      "state": "CA",
+      "county": "Riverside",
+      "highway": "I-10",
+      "milepost": 45,
+      "latitude": 33.6803,
+      "longitude": -116.1739,
+      "parking_spaces": 30,
+      "security": "none",
+      "amenities": [
+        "restrooms"
+      ],
+      "risk_score": 9
+    },
+    {
+      "id": 5,
+      "name": "Pilot Travel Center #587",
+      "city": "Dallas",
+      "state": "TX",
+      "county": "Dallas",
+      "highway": "I-35",
+      "milepost": 420,
+      "latitude": 32.7767,
+      "longitude": -96.7970,
+      "parking_spaces": 200,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards",
+        "gated_parking"
+      ],
+      "risk_score": 2
+    },
+    {
+      "id": 6,
+      "name": "Flying J Travel Center #751",
+      "city": "Houston",
+      "state": "TX",
+      "county": "Harris",
+      "highway": "I-10",
+      "milepost": 782,
+      "latitude": 29.7604,
+      "longitude": -95.3698,
+      "parking_spaces": 180,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards"
+      ],
+      "risk_score": 3
+    },
+    {
+      "id": 7,
+      "name": "Love's Travel Stop #412",
+      "city": "San Antonio",
+      "state": "TX",
+      "county": "Bexar",
+      "highway": "I-35",
+      "milepost": 160,
+      "latitude": 29.4241,
+      "longitude": -98.4936,
+      "parking_spaces": 150,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 4
+    },
+    {
+      "id": 8,
+      "name": "Petro Stopping Center #42",
+      "city": "Los Angeles",
+      "state": "CA",
+      "county": "Los Angeles",
+      "highway": "I-710",
+      "milepost": 12,
+      "latitude": 33.8536,
+      "longitude": -118.2140,
+      "parking_spaces": 100,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 7
+    },
+    {
+      "id": 9,
+      "name": "Pilot Travel Center #892",
+      "city": "Ontario",
+      "state": "CA",
+      "county": "San Bernardino",
+      "highway": "I-10",
+      "milepost": 58,
+      "latitude": 34.0633,
+      "longitude": -117.6509,
+      "parking_spaces": 175,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards"
+      ],
+      "risk_score": 4
+    },
+    {
+      "id": 10,
+      "name": "TA Travel Center #102",
+      "city": "Fresno",
+      "state": "CA",
+      "county": "Fresno",
+      "highway": "CA-99",
+      "milepost": 118,
+      "latitude": 36.7378,
+      "longitude": -119.7871,
+      "parking_spaces": 120,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 5
+    },
+    {
+      "id": 11,
+      "name": "Flying J Travel Center #502",
+      "city": "Atlanta",
+      "state": "GA",
+      "county": "Fulton",
+      "highway": "I-75",
+      "milepost": 255,
+      "latitude": 33.7490,
+      "longitude": -84.3880,
+      "parking_spaces": 140,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards"
+      ],
+      "risk_score": 4
+    },
+    {
+      "id": 12,
+      "name": "Love's Travel Stop #601",
+      "city": "Macon",
+      "state": "GA",
+      "county": "Bibb",
+      "highway": "I-75",
+      "milepost": 164,
+      "latitude": 32.8407,
+      "longitude": -83.6324,
+      "parking_spaces": 100,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 5
+    },
+    {
+      "id": 13,
+      "name": "Pilot Travel Center #324",
+      "city": "Memphis",
+      "state": "TN",
+      "county": "Shelby",
+      "highway": "I-40",
+      "milepost": 12,
+      "latitude": 35.1495,
+      "longitude": -90.0490,
+      "parking_spaces": 160,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards"
+      ],
+      "risk_score": 5
+    },
+    {
+      "id": 14,
+      "name": "TA Travel Center #55",
+      "city": "Nashville",
+      "state": "TN",
+      "county": "Davidson",
+      "highway": "I-40",
+      "milepost": 215,
+      "latitude": 36.1627,
+      "longitude": -86.7816,
+      "parking_spaces": 130,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 4
+    },
+    {
+      "id": 15,
+      "name": "Love's Travel Stop #789",
+      "city": "Knoxville",
+      "state": "TN",
+      "county": "Knox",
+      "highway": "I-40",
+      "milepost": 392,
+      "latitude": 35.9606,
+      "longitude": -83.9207,
+      "parking_spaces": 110,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 3
+    },
+    {
+      "id": 16,
+      "name": "Flying J Travel Center #312",
+      "city": "Chicago",
+      "state": "IL",
+      "county": "Cook",
+      "highway": "I-55",
+      "milepost": 279,
+      "latitude": 41.6219,
+      "longitude": -87.7124,
+      "parking_spaces": 150,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards"
+      ],
+      "risk_score": 5
+    },
+    {
+      "id": 17,
+      "name": "Pilot Travel Center #445",
+      "city": "Joliet",
+      "state": "IL",
+      "county": "Will",
+      "highway": "I-80",
+      "milepost": 132,
+      "latitude": 41.5250,
+      "longitude": -88.0817,
+      "parking_spaces": 120,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 4
+    },
+    {
+      "id": 18,
+      "name": "Love's Travel Stop #234",
+      "city": "Miami",
+      "state": "FL",
+      "county": "Miami-Dade",
+      "highway": "Florida Turnpike",
+      "milepost": 45,
+      "latitude": 25.7617,
+      "longitude": -80.1918,
+      "parking_spaces": 90,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 6
+    },
+    {
+      "id": 19,
+      "name": "Pilot Travel Center #667",
+      "city": "Tampa",
+      "state": "FL",
+      "county": "Hillsborough",
+      "highway": "I-4",
+      "milepost": 5,
+      "latitude": 27.9506,
+      "longitude": -82.4572,
+      "parking_spaces": 130,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards"
+      ],
+      "risk_score": 4
+    },
+    {
+      "id": 20,
+      "name": "TA Travel Center #88",
+      "city": "Jacksonville",
+      "state": "FL",
+      "county": "Duval",
+      "highway": "I-95",
+      "milepost": 358,
+      "latitude": 30.3322,
+      "longitude": -81.6557,
+      "parking_spaces": 140,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards"
+      ],
+      "risk_score": 3
+    },
+    {
+      "id": 21,
+      "name": "Flying J Travel Center #199",
+      "city": "Newark",
+      "state": "NJ",
+      "county": "Essex",
+      "highway": "NJ Turnpike",
+      "milepost": 105,
+      "latitude": 40.7357,
+      "longitude": -74.1724,
+      "parking_spaces": 80,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant"
+      ],
+      "risk_score": 7
+    },
+    {
+      "id": 22,
+      "name": "Pilot Travel Center #555",
+      "city": "Philadelphia",
+      "state": "PA",
+      "county": "Philadelphia",
+      "highway": "I-95",
+      "milepost": 23,
+      "latitude": 39.9526,
+      "longitude": -75.1652,
+      "parking_spaces": 100,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 5
+    },
+    {
+      "id": 23,
+      "name": "Love's Travel Stop #345",
+      "city": "Phoenix",
+      "state": "AZ",
+      "county": "Maricopa",
+      "highway": "I-10",
+      "milepost": 135,
+      "latitude": 33.4484,
+      "longitude": -112.0740,
+      "parking_spaces": 160,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards"
+      ],
+      "risk_score": 4
+    },
+    {
+      "id": 24,
+      "name": "TA Travel Center #71",
+      "city": "Tucson",
+      "state": "AZ",
+      "county": "Pima",
+      "highway": "I-10",
+      "milepost": 262,
+      "latitude": 32.2226,
+      "longitude": -110.9747,
+      "parking_spaces": 120,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 3
+    },
+    {
+      "id": 25,
+      "name": "Pilot Travel Center #289",
+      "city": "Denver",
+      "state": "CO",
+      "county": "Denver",
+      "highway": "I-70",
+      "milepost": 275,
+      "latitude": 39.7392,
+      "longitude": -104.9903,
+      "parking_spaces": 130,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards"
+      ],
+      "risk_score": 4
+    },
+    {
+      "id": 26,
+      "name": "Flying J Travel Center #422",
+      "city": "Tulsa",
+      "state": "OK",
+      "county": "Tulsa",
+      "highway": "I-44",
+      "milepost": 228,
+      "latitude": 36.1540,
+      "longitude": -95.9928,
+      "parking_spaces": 140,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 5
+    },
+    {
+      "id": 27,
+      "name": "Love's Travel Stop #567",
+      "city": "Fort Worth",
+      "state": "TX",
+      "county": "Tarrant",
+      "highway": "I-35W",
+      "milepost": 60,
+      "latitude": 32.7555,
+      "longitude": -97.3308,
+      "parking_spaces": 150,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards"
+      ],
+      "risk_score": 4
+    },
+    {
+      "id": 28,
+      "name": "Petro Stopping Center #15",
+      "city": "El Paso",
+      "state": "TX",
+      "county": "El Paso",
+      "highway": "I-10",
+      "milepost": 5,
+      "latitude": 31.7619,
+      "longitude": -106.4850,
+      "parking_spaces": 110,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 4
+    },
+    {
+      "id": 29,
+      "name": "TA Travel Center #33",
+      "city": "Albuquerque",
+      "state": "NM",
+      "county": "Bernalillo",
+      "highway": "I-40",
+      "milepost": 155,
+      "latitude": 35.0844,
+      "longitude": -106.6504,
+      "parking_spaces": 120,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 5
+    },
+    {
+      "id": 30,
+      "name": "Pilot Travel Center #778",
+      "city": "Las Vegas",
+      "state": "NV",
+      "county": "Clark",
+      "highway": "I-15",
+      "milepost": 42,
+      "latitude": 36.1699,
+      "longitude": -115.1398,
+      "parking_spaces": 140,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards"
+      ],
+      "risk_score": 4
+    },
+    {
+      "id": 31,
+      "name": "Flying J Travel Center #655",
+      "city": "Salt Lake City",
+      "state": "UT",
+      "county": "Salt Lake",
+      "highway": "I-15",
+      "milepost": 305,
+      "latitude": 40.7608,
+      "longitude": -111.8910,
+      "parking_spaces": 130,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards"
+      ],
+      "risk_score": 2
+    },
+    {
+      "id": 32,
+      "name": "Love's Travel Stop #890",
+      "city": "Portland",
+      "state": "OR",
+      "county": "Multnomah",
+      "highway": "I-5",
+      "milepost": 302,
+      "latitude": 45.5155,
+      "longitude": -122.6789,
+      "parking_spaces": 110,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 5
+    },
+    {
+      "id": 33,
+      "name": "TA Travel Center #122",
+      "city": "Seattle",
+      "state": "WA",
+      "county": "King",
+      "highway": "I-5",
+      "milepost": 165,
+      "latitude": 47.6062,
+      "longitude": -122.3321,
+      "parking_spaces": 100,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 6
+    },
+    {
+      "id": 34,
+      "name": "Pilot Travel Center #901",
+      "city": "Cleveland",
+      "state": "OH",
+      "county": "Cuyahoga",
+      "highway": "I-77",
+      "milepost": 155,
+      "latitude": 41.4993,
+      "longitude": -81.6944,
+      "parking_spaces": 120,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 5
+    },
+    {
+      "id": 35,
+      "name": "Flying J Travel Center #188",
+      "city": "Columbus",
+      "state": "OH",
+      "county": "Franklin",
+      "highway": "I-70",
+      "milepost": 108,
+      "latitude": 39.9612,
+      "longitude": -82.9988,
+      "parking_spaces": 140,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards"
+      ],
+      "risk_score": 4
+    },
+    {
+      "id": 36,
+      "name": "Love's Travel Stop #456",
+      "city": "Detroit",
+      "state": "MI",
+      "county": "Wayne",
+      "highway": "I-94",
+      "milepost": 215,
+      "latitude": 42.3314,
+      "longitude": -83.0458,
+      "parking_spaces": 100,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers"
+      ],
+      "risk_score": 6
+    },
+    {
+      "id": 37,
+      "name": "Rest Area US-59 Mile 180",
+      "city": "Laredo",
+      "state": "TX",
+      "county": "Webb",
+      "highway": "US-59",
+      "milepost": 180,
+      "latitude": 27.5036,
+      "longitude": -99.5075,
+      "parking_spaces": 25,
+      "security": "low",
+      "amenities": [
+        "restrooms"
+      ],
+      "risk_score": 7
+    },
+    {
+      "id": 38,
+      "name": "Sapp Bros. Travel Center",
+      "city": "Omaha",
+      "state": "NE",
+      "county": "Douglas",
+      "highway": "I-80",
+      "milepost": 440,
+      "latitude": 41.2565,
+      "longitude": -95.9345,
+      "parking_spaces": 180,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards"
+      ],
+      "risk_score": 2
+    },
+    {
+      "id": 39,
+      "name": "Buc-ee's #55",
+      "city": "New Braunfels",
+      "state": "TX",
+      "county": "Comal",
+      "highway": "I-35",
+      "milepost": 191,
+      "latitude": 29.7030,
+      "longitude": -98.1244,
+      "parking_spaces": 200,
+      "security": "high",
+      "amenities": [
+        "fuel",
+        "restaurant",
+        "showers",
+        "security_guards",
+        "gated_parking"
+      ],
+      "risk_score": 1
+    },
+    {
+      "id": 40,
+      "name": "QuikTrip Travel Center",
+      "city": "Wichita",
+      "state": "KS",
+      "county": "Sedgwick",
+      "highway": "I-135",
+      "milepost": 10,
+      "latitude": 37.6872,
+      "longitude": -97.3301,
+      "parking_spaces": 100,
+      "security": "medium",
+      "amenities": [
+        "fuel",
+        "restaurant"
+      ],
+      "risk_score": 3
+    }
+  ]
+}

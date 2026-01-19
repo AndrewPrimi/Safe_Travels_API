@@ -23,7 +23,7 @@ python -m safetravels.mcp.server
 
 ```mermaid
 graph TD
-    User[User / Claude] -->|HTTP or MCP| Gateway
+    User["User / Claude"] -->|HTTP or MCP| Gateway
     Gateway --> API[FastAPI]
     Gateway --> MCP[MCP Server]
     
@@ -39,7 +39,7 @@ graph TD
         
         Agents --> RAG[RAG Pipeline]
         RAG --> ChromaDB[(ChromaDB)]
-        RAG --> LLM[LLM (Groq/GPT-4o)]
+        RAG --> LLM["LLM (Groq/GPT-4o)"]
     end
 ```
 

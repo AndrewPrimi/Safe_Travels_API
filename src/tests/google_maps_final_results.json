@@ -1,0 +1,154 @@
+{
+  "test_metadata": {
+    "timestamp": "2026-02-02T17:17:07.441693",
+    "start_address": "Willis Tower, Chicago, IL",
+    "destination_address": "Navy Pier, Chicago, IL",
+    "num_routes_found": 3
+  },
+  "routes": [
+    {
+      "route_id": 1,
+      "summary": "S Lower Wacker Dr",
+      "distance_miles": 2.26,
+      "duration_minutes": 9,
+      "start_address": "233 S Wacker Dr, Chicago, IL 60606, USA",
+      "end_address": "600 E Grand Ave, Chicago, IL 60611, USA",
+      "waypoints": [
+        {
+          "latitude": 41.87878,
+          "longitude": -87.63669,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.88602,
+          "longitude": -87.63662,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.88684,
+          "longitude": -87.62718,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.88755,
+          "longitude": -87.61768,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.89113,
+          "longitude": -87.61262,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.89117,
+          "longitude": -87.61,
+          "description": null,
+          "area_type": null
+        }
+      ],
+      "polyline": "kmr~Fhp{uOsC@aBBOP]FoB@oC@{@?KMeBFqBDeB@kD@mBAg@A{BO[Gc@YY_@yBcEKg@Cc@@gG?mW?kLAmBSqA]{@IO[]uBgBs@s@O[Ea@A_@LiE?wCNgCf@gFZsDXcGBg@JcGNeFDwBI[FiDDmBAQKq@CGSCOEY?]?aC@mB@]BOOi@Gy@?_AB_BBsA@AeGCeD@cA@Y?UDQTA\\A`@MHELQFYHm@Ce@KYU]OMOEa@@[@I?",
+      "traffic": {
+        "duration_in_traffic_minutes": 8,
+        "traffic_delay_minutes": 0,
+        "traffic_condition": "light"
+      }
+    },
+    {
+      "route_id": 2,
+      "summary": "S Wacker Dr",
+      "distance_miles": 2.26,
+      "duration_minutes": 13,
+      "start_address": "233 S Wacker Dr, Chicago, IL 60606, USA",
+      "end_address": "600 E Grand Ave, Chicago, IL 60611, USA",
+      "waypoints": [
+        {
+          "latitude": 41.87878,
+          "longitude": -87.63669,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.88603,
+          "longitude": -87.63656,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.88682,
+          "longitude": -87.62713,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.88763,
+          "longitude": -87.6173,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.89115,
+          "longitude": -87.61192,
+          "description": null,
+          "area_type": null
+        }
+      ],
+      "polyline": "kmr~Fhp{uO_IFkOLmGDeC?{AGo@GWIe@[o@cA_AcBM[Uo@Em@?uJ?qN?}KE_H@UOm@CM[iAKU_@]w@o@]WgAaAUa@ESC[@aBBcCAgD@YN_Cl@{FLgDL_DVkLVo@Bw@DeBBcAIW@k@BqADiC@c@E]IYKEe@GyC@uA@iABQO{@IcABqBDmA?U@?}@AgBCkF@sABkAr@Ab@MROJYJo@Ac@I]QY]Y]Cg@BK?",
+      "traffic": {
+        "duration_in_traffic_minutes": 9,
+        "traffic_delay_minutes": 0,
+        "traffic_condition": "light"
+      }
+    },
+    {
+      "route_id": 3,
+      "summary": "W Jackson Blvd and S DuSable Lake Shore Dr/N Jean Baptiste Pointe du Sable Lake Shore Dr/Lake Shore Dr",
+      "distance_miles": 2.16,
+      "duration_minutes": 10,
+      "start_address": "233 S Wacker Dr, Chicago, IL 60606, USA",
+      "end_address": "600 E Grand Ave, Chicago, IL 60611, USA",
+      "waypoints": [
+        {
+          "latitude": 41.8781,
+          "longitude": -87.63588,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.87827,
+          "longitude": -87.62544,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.87961,
+          "longitude": -87.61722,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.88621,
+          "longitude": -87.61372,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.8905,
+          "longitude": -87.61076,
+          "description": null,
+          "area_type": null
+        }
+      ],
+      "polyline": "cir~Ffk{uOS}p@?]EWAuA?iAEsGGaNE}NEaNA}BAq@eA@mDBsA@qD@gCAq@G_@Mi@Uq@g@UUc@m@Ui@e@uAu@yC_@eASc@k@y@q@q@u@e@g@Sg@M[E_@Co@?{DZ_Hh@oCDaB@_@?s@?GOMAcAKc@EoAQUGUK[YOUKWKc@EoAAqCCk@GMIGOEG??M@U?[@YH?RA\\Cd@OHIFQFUDW@_@G_@IW]a@KEQC_@@_@@",
+      "traffic": {
+        "duration_in_traffic_minutes": 9,
+        "traffic_delay_minutes": 0,
+        "traffic_condition": "light"
+      }
+    }
+  ]
+}

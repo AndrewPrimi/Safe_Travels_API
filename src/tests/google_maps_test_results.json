@@ -1,0 +1,643 @@
+{
+  "test_metadata": {
+    "timestamp": "2026-02-02T16:57:01.814203",
+    "start_address": "Willis Tower, Chicago, IL",
+    "destination_address": "Navy Pier, Chicago, IL",
+    "num_routes_found": 3
+  },
+  "routes": [
+    {
+      "route_id": 1,
+      "summary": "S Lower Wacker Dr",
+      "distance_miles": 2.26,
+      "duration_minutes": 9,
+      "start_address": "233 S Wacker Dr, Chicago, IL 60606, USA",
+      "end_address": "600 E Grand Ave, Chicago, IL 60611, USA",
+      "waypoints": [
+        {
+          "latitude": 41.87878,
+          "longitude": -87.63669,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.88602,
+          "longitude": -87.63662,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.88684,
+          "longitude": -87.62718,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.88755,
+          "longitude": -87.61768,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.89113,
+          "longitude": -87.61262,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.89117,
+          "longitude": -87.61,
+          "description": null,
+          "area_type": null
+        }
+      ],
+      "polyline": "kmr~Fhp{uOsC@aBBOP]FoB@oC@{@?KMeBFqBDeB@kD@mBAg@A{BO[Gc@YY_@yBcEKg@Cc@@gG?mW?kLAmBSqA]{@IO[]uBgBs@s@O[Ea@A_@LiE?wCNgCf@gFZsDXcGBg@JcGNeFDwBI[FiDDmBAQKq@CGSCOEY?]?aC@mB@]BOOi@Gy@?_AB_BBsA@AeGCeD@cA@Y?UDQTA\\A`@MHELQFYHm@Ce@KYU]OMOEa@@[@I?",
+      "traffic": {
+        "duration_in_traffic_minutes": 8,
+        "traffic_delay_minutes": 0,
+        "traffic_condition": "light"
+      },
+      "places_along_route": [
+        {
+          "name": "Proqyr Technologies, Inc.",
+          "place_type": "gas_station",
+          "latitude": 41.87776059999999,
+          "longitude": -87.63224989999999,
+          "vicinity": "141 West Jackson Boulevard, Chicago"
+        },
+        {
+          "name": "Shell",
+          "place_type": "gas_station",
+          "latitude": 41.87765499999999,
+          "longitude": -87.65213899999999,
+          "vicinity": "1001 West Jackson Boulevard, Chicago"
+        },
+        {
+          "name": "Crowley Liner & Logistics",
+          "place_type": "gas_station",
+          "latitude": 41.8833839,
+          "longitude": -87.65191279999999,
+          "vicinity": "954 West Washington Boulevard #402, Chicago"
+        },
+        {
+          "name": "Cook County Sheriff-Personnel",
+          "place_type": "police",
+          "latitude": 41.8840611,
+          "longitude": -87.63024279999999,
+          "vicinity": "50 West Washington Street # 702, Chicago"
+        },
+        {
+          "name": "Chief of Staff",
+          "place_type": "police",
+          "latitude": 41.8848512,
+          "longitude": -87.6317268,
+          "vicinity": "100 West Randolph Street, Chicago"
+        },
+        {
+          "name": "U.S. Marshals Service Department",
+          "place_type": "police",
+          "latitude": 41.87880810000001,
+          "longitude": -87.62897509999999,
+          "vicinity": "219 South Dearborn Street #2444, Chicago"
+        },
+        {
+          "name": "Shell",
+          "place_type": "gas_station",
+          "latitude": 41.896823,
+          "longitude": -87.63752799999999,
+          "vicinity": "350 West Chicago Avenue, Chicago"
+        },
+        {
+          "name": "bp",
+          "place_type": "gas_station",
+          "latitude": 41.8934556,
+          "longitude": -87.6321767,
+          "vicinity": "631 North La Salle Drive, Chicago"
+        },
+        {
+          "name": "Proqyr Technologies, Inc.",
+          "place_type": "gas_station",
+          "latitude": 41.87776059999999,
+          "longitude": -87.63224989999999,
+          "vicinity": "141 West Jackson Boulevard, Chicago"
+        },
+        {
+          "name": "Cook County Sheriff-Personnel",
+          "place_type": "police",
+          "latitude": 41.8840611,
+          "longitude": -87.63024279999999,
+          "vicinity": "50 West Washington Street # 702, Chicago"
+        },
+        {
+          "name": "Chief of Staff",
+          "place_type": "police",
+          "latitude": 41.8848512,
+          "longitude": -87.6317268,
+          "vicinity": "100 West Randolph Street, Chicago"
+        },
+        {
+          "name": "U.S. Marshals Service Department",
+          "place_type": "police",
+          "latitude": 41.87880810000001,
+          "longitude": -87.62897509999999,
+          "vicinity": "219 South Dearborn Street #2444, Chicago"
+        },
+        {
+          "name": "bp",
+          "place_type": "gas_station",
+          "latitude": 41.8934556,
+          "longitude": -87.6321767,
+          "vicinity": "631 North La Salle Drive, Chicago"
+        },
+        {
+          "name": "Cook County Sheriff-Personnel",
+          "place_type": "police",
+          "latitude": 41.8840611,
+          "longitude": -87.63024279999999,
+          "vicinity": "50 West Washington Street # 702, Chicago"
+        },
+        {
+          "name": "Chief of Staff",
+          "place_type": "police",
+          "latitude": 41.8848512,
+          "longitude": -87.6317268,
+          "vicinity": "100 West Randolph Street, Chicago"
+        },
+        {
+          "name": "U.S. Marshals Service Department",
+          "place_type": "police",
+          "latitude": 41.87880810000001,
+          "longitude": -87.62897509999999,
+          "vicinity": "219 South Dearborn Street #2444, Chicago"
+        },
+        {
+          "name": "Northwestern Police Department",
+          "place_type": "police",
+          "latitude": 41.89565869999999,
+          "longitude": -87.6224529,
+          "vicinity": "Huron Superior Parking, 211 East Superior Street, Chicago"
+        },
+        {
+          "name": "Cause of Police Brutality",
+          "place_type": "police",
+          "latitude": 41.88823219999999,
+          "longitude": -87.630592,
+          "vicinity": "321 North Clark Street, Chicago"
+        },
+        {
+          "name": "Red Light Camera Southbound",
+          "place_type": "police",
+          "latitude": 41.8934991,
+          "longitude": -87.6244832,
+          "vicinity": "Chicago"
+        },
+        {
+          "name": "Northwestern Police Department",
+          "place_type": "police",
+          "latitude": 41.89565869999999,
+          "longitude": -87.6224529,
+          "vicinity": "Huron Superior Parking, 211 East Superior Street, Chicago"
+        },
+        {
+          "name": "Red Light Camera Southbound",
+          "place_type": "police",
+          "latitude": 41.8934991,
+          "longitude": -87.6244832,
+          "vicinity": "Chicago"
+        }
+      ]
+    },
+    {
+      "route_id": 2,
+      "summary": "W Jackson Blvd and S DuSable Lake Shore Dr/N Jean Baptiste Pointe du Sable Lake Shore Dr/Lake Shore Dr",
+      "distance_miles": 2.16,
+      "duration_minutes": 10,
+      "start_address": "233 S Wacker Dr, Chicago, IL 60606, USA",
+      "end_address": "600 E Grand Ave, Chicago, IL 60611, USA",
+      "waypoints": [
+        {
+          "latitude": 41.8781,
+          "longitude": -87.63588,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.87827,
+          "longitude": -87.62544,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.87961,
+          "longitude": -87.61722,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.88621,
+          "longitude": -87.61372,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.8905,
+          "longitude": -87.61076,
+          "description": null,
+          "area_type": null
+        }
+      ],
+      "polyline": "cir~Ffk{uOS}p@?]EWAuA?iAEsGGaNE}NEaNA}BAq@eA@mDBsA@qD@gCAq@G_@Mi@Uq@g@UUc@m@Ui@e@uAu@yC_@eASc@k@y@q@q@u@e@g@Sg@M[E_@Co@?{DZ_Hh@oCDaB@_@?s@?GOMAcAKc@EoAQUGUK[YOUKWKc@EoAAqCCk@GMIGOEG??M@U?[@YH?RA\\Cd@OHIFQFUDW@_@G_@IW]a@KEQC_@@_@@",
+      "traffic": {
+        "duration_in_traffic_minutes": 9,
+        "traffic_delay_minutes": 0,
+        "traffic_condition": "light"
+      },
+      "places_along_route": [
+        {
+          "name": "The PRIDE of Chicago",
+          "place_type": "gas_station",
+          "latitude": 41.8670224,
+          "longitude": -87.6251904,
+          "vicinity": "1221 South Wabash Avenue, Chicago"
+        },
+        {
+          "name": "Proqyr Technologies, Inc.",
+          "place_type": "gas_station",
+          "latitude": 41.87776059999999,
+          "longitude": -87.63224989999999,
+          "vicinity": "141 West Jackson Boulevard, Chicago"
+        },
+        {
+          "name": "Shell",
+          "place_type": "gas_station",
+          "latitude": 41.87765499999999,
+          "longitude": -87.65213899999999,
+          "vicinity": "1001 West Jackson Boulevard, Chicago"
+        },
+        {
+          "name": "Cook County Sheriff-Personnel",
+          "place_type": "police",
+          "latitude": 41.8840611,
+          "longitude": -87.63024279999999,
+          "vicinity": "50 West Washington Street # 702, Chicago"
+        },
+        {
+          "name": "Chief of Staff",
+          "place_type": "police",
+          "latitude": 41.8848512,
+          "longitude": -87.6317268,
+          "vicinity": "100 West Randolph Street, Chicago"
+        },
+        {
+          "name": "U.S. Marshals Service Department",
+          "place_type": "police",
+          "latitude": 41.87880810000001,
+          "longitude": -87.62897509999999,
+          "vicinity": "219 South Dearborn Street #2444, Chicago"
+        },
+        {
+          "name": "The PRIDE of Chicago",
+          "place_type": "gas_station",
+          "latitude": 41.8670224,
+          "longitude": -87.6251904,
+          "vicinity": "1221 South Wabash Avenue, Chicago"
+        },
+        {
+          "name": "Proqyr Technologies, Inc.",
+          "place_type": "gas_station",
+          "latitude": 41.87776059999999,
+          "longitude": -87.63224989999999,
+          "vicinity": "141 West Jackson Boulevard, Chicago"
+        },
+        {
+          "name": "Shantara Corporation",
+          "place_type": "gas_station",
+          "latitude": 41.8758936,
+          "longitude": -87.6294842,
+          "vicinity": "50 West Congress Parkway, Chicago"
+        },
+        {
+          "name": "Cook County Sheriff-Personnel",
+          "place_type": "police",
+          "latitude": 41.8840611,
+          "longitude": -87.63024279999999,
+          "vicinity": "50 West Washington Street # 702, Chicago"
+        },
+        {
+          "name": "Chief of Staff",
+          "place_type": "police",
+          "latitude": 41.8848512,
+          "longitude": -87.6317268,
+          "vicinity": "100 West Randolph Street, Chicago"
+        },
+        {
+          "name": "U.S. Marshals Service Department",
+          "place_type": "police",
+          "latitude": 41.87880810000001,
+          "longitude": -87.62897509999999,
+          "vicinity": "219 South Dearborn Street #2444, Chicago"
+        },
+        {
+          "name": "The PRIDE of Chicago",
+          "place_type": "gas_station",
+          "latitude": 41.8670224,
+          "longitude": -87.6251904,
+          "vicinity": "1221 South Wabash Avenue, Chicago"
+        },
+        {
+          "name": "Proqyr Technologies, Inc.",
+          "place_type": "gas_station",
+          "latitude": 41.87776059999999,
+          "longitude": -87.63224989999999,
+          "vicinity": "141 West Jackson Boulevard, Chicago"
+        },
+        {
+          "name": "Shantara Corporation",
+          "place_type": "gas_station",
+          "latitude": 41.8758936,
+          "longitude": -87.6294842,
+          "vicinity": "50 West Congress Parkway, Chicago"
+        },
+        {
+          "name": "Cook County Sheriff-Personnel",
+          "place_type": "police",
+          "latitude": 41.8840611,
+          "longitude": -87.63024279999999,
+          "vicinity": "50 West Washington Street # 702, Chicago"
+        },
+        {
+          "name": "U.S. Marshals Service Department",
+          "place_type": "police",
+          "latitude": 41.87880810000001,
+          "longitude": -87.62897509999999,
+          "vicinity": "219 South Dearborn Street #2444, Chicago"
+        },
+        {
+          "name": "Chief of Staff",
+          "place_type": "police",
+          "latitude": 41.8848512,
+          "longitude": -87.6317268,
+          "vicinity": "100 West Randolph Street, Chicago"
+        },
+        {
+          "name": "Cook County Sheriff-Personnel",
+          "place_type": "police",
+          "latitude": 41.8840611,
+          "longitude": -87.63024279999999,
+          "vicinity": "50 West Washington Street # 702, Chicago"
+        },
+        {
+          "name": "Chief of Staff",
+          "place_type": "police",
+          "latitude": 41.8848512,
+          "longitude": -87.6317268,
+          "vicinity": "100 West Randolph Street, Chicago"
+        },
+        {
+          "name": "U.S. Marshals Service Department",
+          "place_type": "police",
+          "latitude": 41.87880810000001,
+          "longitude": -87.62897509999999,
+          "vicinity": "219 South Dearborn Street #2444, Chicago"
+        },
+        {
+          "name": "Northwestern Police Department",
+          "place_type": "police",
+          "latitude": 41.89565869999999,
+          "longitude": -87.6224529,
+          "vicinity": "Huron Superior Parking, 211 East Superior Street, Chicago"
+        },
+        {
+          "name": "Red Light Camera Southbound",
+          "place_type": "police",
+          "latitude": 41.8934991,
+          "longitude": -87.6244832,
+          "vicinity": "Chicago"
+        }
+      ]
+    },
+    {
+      "route_id": 3,
+      "summary": "W Wacker Dr",
+      "distance_miles": 2.23,
+      "duration_minutes": 12,
+      "start_address": "233 S Wacker Dr, Chicago, IL 60606, USA",
+      "end_address": "600 E Grand Ave, Chicago, IL 60611, USA",
+      "waypoints": [
+        {
+          "latitude": 41.87879,
+          "longitude": -87.63523,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.88608,
+          "longitude": -87.63542,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.88702,
+          "longitude": -87.62655,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.88764,
+          "longitude": -87.61749,
+          "description": null,
+          "area_type": null
+        },
+        {
+          "latitude": 41.89115,
+          "longitude": -87.61179,
+          "description": null,
+          "area_type": null
+        }
+      ],
+      "polyline": "mmr~Fdg{uOyDDyDBwABgDBaGF{B?uABe@?aC@cB?e@Aw@FcB@_@?Ie@Aq@?gF?yG?yF?uG?sFEkF@q@g@sBSg@iAaAwAkA][OUGUEo@DsBA{G@S\\yD\\kDHiAF{BNqEJmFDuA@e@JWJWBk@B}@DwBI[FiDB_CKq@CGSCOEY?]?oFB]BOOi@Gy@?_AB_BBsA@EkLB}A?UDQTA\\ANEPGHELQFYFY@SCe@KYU]OMOEa@@e@@",
+      "traffic": {
+        "duration_in_traffic_minutes": 9,
+        "traffic_delay_minutes": 0,
+        "traffic_condition": "light"
+      },
+      "places_along_route": [
+        {
+          "name": "The PRIDE of Chicago",
+          "place_type": "gas_station",
+          "latitude": 41.8670224,
+          "longitude": -87.6251904,
+          "vicinity": "1221 South Wabash Avenue, Chicago"
+        },
+        {
+          "name": "Proqyr Technologies, Inc.",
+          "place_type": "gas_station",
+          "latitude": 41.87776059999999,
+          "longitude": -87.63224989999999,
+          "vicinity": "141 West Jackson Boulevard, Chicago"
+        },
+        {
+          "name": "Shell",
+          "place_type": "gas_station",
+          "latitude": 41.87765499999999,
+          "longitude": -87.65213899999999,
+          "vicinity": "1001 West Jackson Boulevard, Chicago"
+        },
+        {
+          "name": "Cook County Sheriff-Personnel",
+          "place_type": "police",
+          "latitude": 41.8840611,
+          "longitude": -87.63024279999999,
+          "vicinity": "50 West Washington Street # 702, Chicago"
+        },
+        {
+          "name": "Chief of Staff",
+          "place_type": "police",
+          "latitude": 41.8848512,
+          "longitude": -87.6317268,
+          "vicinity": "100 West Randolph Street, Chicago"
+        },
+        {
+          "name": "U.S. Marshals Service Department",
+          "place_type": "police",
+          "latitude": 41.87880810000001,
+          "longitude": -87.62897509999999,
+          "vicinity": "219 South Dearborn Street #2444, Chicago"
+        },
+        {
+          "name": "Shell",
+          "place_type": "gas_station",
+          "latitude": 41.896823,
+          "longitude": -87.63752799999999,
+          "vicinity": "350 West Chicago Avenue, Chicago"
+        },
+        {
+          "name": "bp",
+          "place_type": "gas_station",
+          "latitude": 41.8934556,
+          "longitude": -87.6321767,
+          "vicinity": "631 North La Salle Drive, Chicago"
+        },
+        {
+          "name": "Proqyr Technologies, Inc.",
+          "place_type": "gas_station",
+          "latitude": 41.87776059999999,
+          "longitude": -87.63224989999999,
+          "vicinity": "141 West Jackson Boulevard, Chicago"
+        },
+        {
+          "name": "Cook County Sheriff-Personnel",
+          "place_type": "police",
+          "latitude": 41.8840611,
+          "longitude": -87.63024279999999,
+          "vicinity": "50 West Washington Street # 702, Chicago"
+        },
+        {
+          "name": "Chief of Staff",
+          "place_type": "police",
+          "latitude": 41.8848512,
+          "longitude": -87.6317268,
+          "vicinity": "100 West Randolph Street, Chicago"
+        },
+        {
+          "name": "U.S. Marshals Service Department",
+          "place_type": "police",
+          "latitude": 41.87880810000001,
+          "longitude": -87.62897509999999,
+          "vicinity": "219 South Dearborn Street #2444, Chicago"
+        },
+        {
+          "name": "Shell",
+          "place_type": "gas_station",
+          "latitude": 41.896823,
+          "longitude": -87.63752799999999,
+          "vicinity": "350 West Chicago Avenue, Chicago"
+        },
+        {
+          "name": "bp",
+          "place_type": "gas_station",
+          "latitude": 41.8934556,
+          "longitude": -87.6321767,
+          "vicinity": "631 North La Salle Drive, Chicago"
+        },
+        {
+          "name": "Proqyr Technologies, Inc.",
+          "place_type": "gas_station",
+          "latitude": 41.87776059999999,
+          "longitude": -87.63224989999999,
+          "vicinity": "141 West Jackson Boulevard, Chicago"
+        },
+        {
+          "name": "Cook County Sheriff-Personnel",
+          "place_type": "police",
+          "latitude": 41.8840611,
+          "longitude": -87.63024279999999,
+          "vicinity": "50 West Washington Street # 702, Chicago"
+        },
+        {
+          "name": "Chief of Staff",
+          "place_type": "police",
+          "latitude": 41.8848512,
+          "longitude": -87.6317268,
+          "vicinity": "100 West Randolph Street, Chicago"
+        },
+        {
+          "name": "U.S. Marshals Service Department",
+          "place_type": "police",
+          "latitude": 41.87880810000001,
+          "longitude": -87.62897509999999,
+          "vicinity": "219 South Dearborn Street #2444, Chicago"
+        },
+        {
+          "name": "bp",
+          "place_type": "gas_station",
+          "latitude": 41.8934556,
+          "longitude": -87.6321767,
+          "vicinity": "631 North La Salle Drive, Chicago"
+        },
+        {
+          "name": "Cook County Sheriff-Personnel",
+          "place_type": "police",
+          "latitude": 41.8840611,
+          "longitude": -87.63024279999999,
+          "vicinity": "50 West Washington Street # 702, Chicago"
+        },
+        {
+          "name": "Chief of Staff",
+          "place_type": "police",
+          "latitude": 41.8848512,
+          "longitude": -87.6317268,
+          "vicinity": "100 West Randolph Street, Chicago"
+        },
+        {
+          "name": "U.S. Marshals Service Department",
+          "place_type": "police",
+          "latitude": 41.87880810000001,
+          "longitude": -87.62897509999999,
+          "vicinity": "219 South Dearborn Street #2444, Chicago"
+        },
+        {
+          "name": "Northwestern Police Department",
+          "place_type": "police",
+          "latitude": 41.89565869999999,
+          "longitude": -87.6224529,
+          "vicinity": "Huron Superior Parking, 211 East Superior Street, Chicago"
+        },
+        {
+          "name": "Red Light Camera Southbound",
+          "place_type": "police",
+          "latitude": 41.8934991,
+          "longitude": -87.6244832,
+          "vicinity": "Chicago"
+        },
+        {
+          "name": "Cause of Police Brutality",
+          "place_type": "police",
+          "latitude": 41.88823219999999,
+          "longitude": -87.630592,
+          "vicinity": "321 North Clark Street, Chicago"
+        }
+      ]
+    }
+  ]
+}

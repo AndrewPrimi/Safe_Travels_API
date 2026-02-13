@@ -73,8 +73,8 @@ mcp = FastMCP(
 async def get_location_crime_stats(
     latitude: float,
     longitude: float,
-    radius_miles: float = 1.0,
-    days_back: int = 180,
+    radius_miles: float = 0.25,
+    days_back: int = 14,
 ) -> dict:
     """
     Query crime statistics for a geographic location.
@@ -121,9 +121,9 @@ async def get_location_crime_stats(
 async def get_location_crime_incidents(
     latitude: float,
     longitude: float,
-    radius_miles: float = 0.5,
-    days_back: int = 180,
-    limit: int = 50,
+    radius_miles: float = 0.25,
+    days_back: int = 14,
+    limit: int = 5,
 ) -> dict:
     """
     Query raw crime incident data for a location.

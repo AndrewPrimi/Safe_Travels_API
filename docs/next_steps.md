@@ -1,111 +1,155 @@
-# Next Steps — Phase 3: PydanticAI Agent
+# Next Steps — What's Done and What's Left
 
 ## Current Status
 
-| Phase | Status |
-|-------|--------|
-| Phase 1 — Crime MCP Server | **COMPLETE** (9/9 tests passing) |
-| Phase 2 — Google Maps Helper | **COMPLETE** (adaptive waypoints + traffic) |
-| **Phase 3 — PydanticAI Agent** | **UP NEXT** |
-| Phase 4 — Orchestrator | Not started |
-| Phase 5 — FastAPI Endpoint | Not started |
+| Phase | Component | Status |
+|-------|-----------|--------|
+| Phase 1 | Crime MCP Server | **COMPLETE** (9/9 tests passing) |
+| Phase 2 | Google Maps Helper | **COMPLETE** (adaptive waypoints + traffic) |
+| Phase 3 | PydanticAI Agent | **COMPLETE** (built into safe_travels.py) |
+| Phase 4 | Orchestrator | **COMPLETE** (code written, needs testing) |
+| Phase 5 | FastAPI Endpoint | **NOT STARTED** |
 
 ---
 
-## Phase 3: SafeTravels AI Agent
+## What Needs to Happen Before Everything Works
 
-### What It Does
+### 1. Add Your Real OpenRouter API Key
 
-A PydanticAI agent that takes route waypoints, queries the Crime MCP server for crime data at each point, and returns a structured risk assessment.
-
-**Input:** Route waypoints (list of lat/lng coordinates from Phase 2)
-**Output:** `RouteAnalysisResult` — risk score (1-100) + text summary
-
-### Files to Create / Edit
-
-| File | Action |
-|------|--------|
-| `src/safe_travels_agent.py` | Implement (currently empty) |
-| `src/tests/test_phase3_agent.py` | Implement (currently empty) |
-
-### Pre-Implementation Research
-
-Before writing code, study these reference files:
-
-1. `docs/agent_zero.py` — Primary PydanticAI agent reference (MCPServerStreamableHTTP pattern)
-2. `docs/Pydantic_AI/agent.py` — Simple MCP connection example
-3. `docs/Pydantic_AI/pydantic_ai_docs/agents.md` — System prompts, running agents
-4. `docs/Pydantic_AI/pydantic_ai_docs/output.md` — Structured output types
-5. `docs/Pydantic_AI/pydantic_ai_docs/mcp_client.md` — MCPServerStreamableHTTP usage
-
-### Key Components
-
-1. **Output Type** — `RouteAnalysisResult` Pydantic model
-   - `risk_score`: int (1-100)
-   - `risk_summary`: str (50-500 chars)
-
-2. **Agent Input** — `RouteAnalysisInput` dataclass
-   - route_id, summary, distance_miles, duration_minutes, waypoints
-
-3. **LLM Config** — OpenRouter via PydanticAI's OpenAI provider
-   - Model: `openai/gpt-4o-mini` (configurable via `LLM_MODEL` env var)
-   - Key: `OPEN_ROUTER_API_KEY`
-
-4. **MCP Connection** — `MCPServerStreamableHTTP(url="http://localhost:8001/mcp")`
-   - Connects to the Phase 1 Crime MCP server
-   - Uses `agent.run_mcp_servers()` context manager
-
-5. **System Prompt** — Instructs the agent to:
-   - Query crime data for each waypoint via MCP tools
-   - Aggregate findings (total incidents, crime types, hotspots)
-   - Calculate a 1-100 risk score based on volume, severity, concentration
-   - Write a concise summary with key risk areas and recommendations
-
-6. **SafeTravelsAgent Class** — Wraps the agent with an `analyze_route()` async method
-
-### Environment Variables Required
+The `.env` file currently has a placeholder. Update it:
 
 ```
-OPEN_ROUTER_API_KEY=your_openrouter_key
-LLM_MODEL=openai/gpt-4o-mini          # optional, has default
-CRIME_MCP_URL=http://localhost:8001/mcp # optional, has default
+OPEN_ROUTER_API_KEY=your_actual_key_here
 ```
 
-### How to Test
+You can get a key at https://openrouter.ai/keys. The default model is `openai/gpt-4o-mini` which is cheap.
+
+### 2. Run the Tests
+
+Once the OpenRouter key is set:
 
 ```bash
-# 1. Start the Crime MCP server (terminal 1)
-python -m src.MCP_Servers.crime_mcp
-
-# 2. Run Phase 3 tests (terminal 2)
+# AI agent tests (Phase 3)
 pytest src/tests/test_phase3_agent.py -v -s
+
+# Orchestrator tests (Phase 4)
+pytest src/tests/test_phase4_orchestrator.py -v -s
+
+# Manual end-to-end run
+python src/safe_travels.py
 ```
 
-### Completion Criteria
+Fix any issues that come up. The mocked tests should pass without any API keys. The integration tests need Google Maps + OpenRouter keys.
 
-- [ ] `SafeTravelsAgent` class implemented in `src/safe_travels_agent.py`
-- [ ] Agent connects to Crime MCP server via MCPServerStreamableHTTP
-- [ ] Agent uses `output_type=RouteAnalysisResult` for structured output
-- [ ] System prompt is comprehensive (scoring scale, analysis steps, rules)
-- [ ] `analyze_route()` returns `{route_id, risk_score, risk_summary, status}`
-- [ ] All tests in `test_phase3_agent.py` pass
+### 3. Get a Private Crimeometer API Key
+
+The shared test key (`k3RAzKN1...`) is permanently rate-limited (HTTP 429). Until you have a working private key:
+
+- All crime data in tests is **mocked**
+- The manual `python src/safe_travels.py` run will get rate-limit errors for crime data (the AI agent will still run, just with error data at each waypoint)
+- Two tests in `test_phase4_orchestrator.py` are marked `@pytest.mark.skip` — remove the skip once you have a key
 
 ---
 
-## After Phase 3
+## Phase 5: FastAPI Endpoint (NOT STARTED)
 
-### Phase 4: Orchestrator (`src/safe_travels.py`)
+This is the final phase. It wraps the orchestrator in a REST API.
 
-- Calls `get_routes()` from Phase 2 to get route alternatives
-- Converts route data to agent input format
-- Runs agent analysis for all routes **in parallel** via `asyncio.gather()`
-- Handles timeouts and partial failures
-- Returns consolidated results
+### What to Build
 
-### Phase 5: FastAPI (`src/safe_travels_api.py`)
+**File:** `src/safe_travels_api.py`
 
-- `POST /analyze-route` endpoint accepting `{start, destination}`
-- Calls the Phase 4 orchestrator
-- Returns `{routes: [{route_id, risk_score, risk_summary, status}]}`
-- Health check at `GET /health`
-- OpenAPI docs at `GET /docs`
+**Endpoints:**
+
+| Endpoint | Method | Description |
+|----------|--------|-------------|
+| `POST /analyze-route` | POST | Analyze routes between two addresses |
+| `GET /health` | GET | Health check |
+| `GET /docs` | GET | OpenAPI documentation (auto-generated by FastAPI) |
+
+**Request:**
+```json
+{
+  "start": "Willis Tower, Chicago, IL",
+  "destination": "Navy Pier, Chicago, IL"
+}
+```
+
+**Response:**
+```json
+{
+  "routes": [
+    {
+      "route_id": 1,
+      "summary": "S Lower Wacker Dr",
+      "distance_miles": 2.26,
+      "duration_minutes": 9,
+      "start_address": "233 S Wacker Dr, Chicago, IL 60606, USA",
+      "end_address": "600 E Grand Ave, Chicago, IL 60611, USA",
+      "risk_score": 48,
+      "analysis": "This route presents moderate risk...",
+      "status": "success"
+    }
+  ]
+}
+```
+
+### Implementation Notes
+
+- Use Pydantic models for request/response validation
+- Call `await main(start, destination)` from `src/safe_travels.py`
+- Add proper error responses (400 for bad input, 500 for internal errors)
+- CORS middleware if frontend will call it
+- Run with `uvicorn src.safe_travels_api:app --reload --port 8000`
+
+### Tests
+
+**File:** `src/tests/test_phase5_api.py` (already exists, currently empty)
+
+- Test health endpoint
+- Test analyze-route with valid addresses
+- Test analyze-route with invalid/empty addresses
+- Test response structure matches spec
+
+---
+
+## Optional Improvements (After Phase 5)
+
+These are not required but would improve the project:
+
+### Performance
+- **Cache Google Maps routes** — same start/destination within a time window returns cached routes
+- **Connection pooling** — share a single `httpx.AsyncClient` across crime API calls instead of creating one per request
+- **Rate limit handling** — add retry logic with exponential backoff for Crimeometer 429s
+
+### Features
+- **Multiple crime APIs** — add FBI Crime Data API (free) or CrimeScore API as fallbacks when Crimeometer is rate-limited
+- **Time-of-day scoring** — adjust risk scores based on when the user plans to travel
+- **Route visualization** — return waypoints + risk data for map rendering on a frontend
+- **Historical comparisons** — store results and show how a route's risk changes over time
+
+### Infrastructure
+- **Containerize** — Dockerfile for the API + MCP server
+- **CI/CD** — GitHub Actions to run tests on push
+- **Monitoring** — track API latency, error rates, LLM costs
+
+---
+
+## Quick Reference: How to Run Everything
+
+```bash
+# Run the orchestrator manually (end-to-end test)
+python src/safe_travels.py
+
+# Run all tests
+pytest src/tests/ -v -s
+
+# Run specific phase tests
+pytest src/tests/test_phase1_crime_mcp.py -v -s   # Phase 1 (needs MCP server running)
+pytest src/tests/test_phase2_google_maps.py -v -s  # Phase 2
+pytest src/tests/test_phase3_agent.py -v -s        # Phase 3
+pytest src/tests/test_phase4_orchestrator.py -v -s # Phase 4
+
+# Start the Crime MCP server (if needed for Phase 1 tests)
+python -m src.MCP_Servers.crime_mcp
+```
